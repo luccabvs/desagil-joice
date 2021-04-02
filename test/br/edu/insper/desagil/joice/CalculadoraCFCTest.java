@@ -2,6 +2,9 @@ package br.edu.insper.desagil.joice;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import br.edu.insper.desagil.joice.model.CalculadoraCFC;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CalculadoraCFCTest {
@@ -9,12 +12,12 @@ public class CalculadoraCFCTest {
 	
 	@BeforeEach
 	public void setUp() {
-		this.calculadoraCFC = new CalculadoraCFC;
+		this.calculadoraCFC = new CalculadoraCFC();
 		
 	}
 	
 	@Test
-	public test ouroTest() {
+	public void ouroTest() {
 		double pesoAtomico = 196.97;
 		double raioAtomico = 0.144;
 		
@@ -23,7 +26,7 @@ public class CalculadoraCFCTest {
 	}
 	
 	@Test
-	public test prataTest() {
+	public void prataTest() {
 		double pesoAtomico = 107.87;
 		double raioAtomico = 0.144;
 		
@@ -32,7 +35,7 @@ public class CalculadoraCFCTest {
 	}
 	
 	@Test
-	public test cobreTest() {
+	public void cobreTest() {
 		double pesoAtomico = 63.55;
 		double raioAtomico = 0.128;
 		
