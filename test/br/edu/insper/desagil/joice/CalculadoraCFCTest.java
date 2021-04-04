@@ -10,6 +10,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CalculadoraCFCTest {
 	private CalculadoraCFC calculadoraCFC;
 	
+	private static double DELTA = 0.05;
+	
 	@BeforeEach
 	public void setUp() {
 		this.calculadoraCFC = new CalculadoraCFC();
@@ -21,7 +23,7 @@ public class CalculadoraCFCTest {
 		double pesoAtomico = 196.97;
 		double raioAtomico = 0.144;
 		
-		assertEquals(19.36, calculadoraCFC.calcula(pesoAtomico, raioAtomico), 0.05);
+		assertEquals(19.36, calculadoraCFC.calcula(pesoAtomico, raioAtomico), DELTA);
 		
 	}
 	
@@ -30,7 +32,7 @@ public class CalculadoraCFCTest {
 		double pesoAtomico = 107.87;
 		double raioAtomico = 0.144;
 		
-		assertEquals(10.60, calculadoraCFC.calcula(pesoAtomico, raioAtomico), 0.05);
+		assertEquals(10.60, calculadoraCFC.calcula(pesoAtomico, raioAtomico), DELTA);
 		
 	}
 	
@@ -39,7 +41,7 @@ public class CalculadoraCFCTest {
 		double pesoAtomico = 63.55;
 		double raioAtomico = 0.128;
 		
-		assertEquals(8.89, calculadoraCFC.calcula(pesoAtomico, raioAtomico), 0.05);
+		assertEquals(8.89, calculadoraCFC.calcula(pesoAtomico, raioAtomico), DELTA);
 		
 	}
 	

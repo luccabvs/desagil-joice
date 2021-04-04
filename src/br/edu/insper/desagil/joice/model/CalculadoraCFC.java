@@ -6,6 +6,7 @@ public class CalculadoraCFC extends Calculadora {
 		super("Cúbica de Face Centrada");	
 	}
 	
+	@Override
 	public double calcula(double pesoAtomico, double raioAtomico) {
 		double numeroAvogrado = 6.023 * Math.pow(10, 23);
 		
